@@ -26,10 +26,6 @@
 # scope labels
 # project-specific groups for issues, pull requests, and discussions
 
-- name: scope:builtin
-  description: builtin modules
-  color: 74cefc
-
 - name: scope:cjs
   description: commonjs
   color: 74cefc
@@ -44,6 +40,10 @@
 
 - name: scope:patches
   description: patches
+  color: 74cefc
+
+- name: scope:ponyfill
+  description: ponyfill
   color: 74cefc
 
 - name: scope:release
