@@ -9,7 +9,6 @@
       2,
       "always",
       [
-        "builtin",
         "cjs",
         "deps",
         "deps-bundle",
@@ -21,6 +20,7 @@
         "github",
         "patches",
         "pkg",
+        "ponyfill",
         "release",
         "scripts",
         "tests",
