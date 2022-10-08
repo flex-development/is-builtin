@@ -14,6 +14,8 @@ import tsconfig from './tsconfig.build.json' assert { type: 'json' }
  */
 const config: Config = defineBuildConfig({
   platform: 'node',
+  sourcemap: true,
+  sourcesContent: false,
   target: [
     tsconfig.compilerOptions.target,
     'node' + pkg.engines.node.replace(/^\D+/, '')
