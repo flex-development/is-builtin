@@ -56,10 +56,13 @@ yarn add @flex-development/is-builtin@flex-development/is-builtin
 
 ```typescript
 import { isBuiltin } from '@flex-development/is-builtin'
+import { URL, pathToFileURL } from 'node:url'
 
-console.debug(isBuiltin('node:module'))                  // true
-console.debug(isBuiltin('fs/promises'))                  // true
-console.debug(isBuiltin('@flex-development/is-builtin')) // false
+console.debug(isBuiltin('@flex-development/is-builtin'))                        // false
+console.debug(isBuiltin('fs/promises'))                                         // true
+console.debug(isBuiltin('node:module'))                                         // true
+console.debug(isBuiltin(new URL('node:os')))                                    // true
+console.debug(isBuiltin(pathToFileURL('node_modules/@flex-development/mlly')))  // false
 ```
 
 ## API
