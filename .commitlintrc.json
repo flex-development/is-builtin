@@ -17,6 +17,7 @@
         "esm",
         "exports",
         "github",
+        "install",
         "patches",
         "pkg",
         "ponyfill",
