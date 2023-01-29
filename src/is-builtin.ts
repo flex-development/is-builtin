@@ -4,6 +4,7 @@
  */
 
 import BUILTIN_MODULES from '#src/internal/builtin-modules'
+import type { URL } from 'node:url'
 
 /**
  * Checks if the given module `id` is a [builtin module][1].
@@ -20,10 +21,17 @@ import BUILTIN_MODULES from '#src/internal/builtin-modules'
  *  isBuiltin('node:module') // true
  * @example
  *  isBuiltin('path/posix') // true
+ * @example
+ *  import { URL, pathToFileURL } from 'node:url'
  *
- * @param {string} id - Module name to evaluate
+ *  isBuiltin(new URL('node:os')) // true
+ *  isBuiltin(pathToFileURL('.')) // false
+ *
+ * @param {URL | string} id - Module id to evaluate
  * @return {boolean} `true` if `id` is builtin module, `false` otherwise
  */
-const isBuiltin = (id: string): boolean => BUILTIN_MODULES.has(id)
+const isBuiltin = (id: URL | string): boolean => {
+  return BUILTIN_MODULES.has(typeof id === 'object' ? id.href : id)
+}
 
 export default isBuiltin

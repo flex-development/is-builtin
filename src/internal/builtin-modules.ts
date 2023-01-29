@@ -17,6 +17,8 @@ import { builtinModules } from '@flex-development/builtin-modules'
  *
  * @const {Set<string>} BUILTIN_MODULES
  */
-const BUILTIN_MODULES = new Set(builtinModules.flatMap(m => [m, 'node:' + m]))
+const BUILTIN_MODULES: Set<string> = new Set<string>(
+  builtinModules.flatMap(name => [name, 'node:' + name])
+)
 
 export default BUILTIN_MODULES
