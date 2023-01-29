@@ -1,6 +1,7 @@
 # is-builtin
 
 [![npm](https://img.shields.io/npm/v/@flex-development/is-builtin.svg)](https://npmjs.com/package/@flex-development/is-builtin)
+[![codecov](https://codecov.io/github/flex-development/is-builtin/branch/main/graph/badge.svg?token=MQ427OD7XD)](https://codecov.io/github/flex-development/is-builtin)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![license](https://img.shields.io/github/license/flex-development/is-builtin.svg)](LICENSE.md)
 [![conventional commits](https://img.shields.io/badge/-conventional%20commits-fe5196?logo=conventional-commits&logoColor=ffffff)](https://conventionalcommits.org/)
