@@ -18,6 +18,7 @@
         "exports",
         "github",
         "install",
+        "nvm",
         "patches",
         "pkg",
         "ponyfill",
