@@ -18,6 +18,7 @@
         "exports",
         "github",
         "install",
+        "internal",
         "nvm",
         "patches",
         "pkg",
