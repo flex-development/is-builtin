@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - isBuiltin
- * @module is-builtin/tests/isBuiltin
+ * @module is-builtin/tests/unit/isBuiltin
  */
 
 import testSubject from '../is-builtin'

@@ -1,6 +1,6 @@
 /**
  * @file isBuiltin
- * @module is-builtin
+ * @module is-builtin/isBuiltin
  */
 
 import { builtinModules } from 'node:module'

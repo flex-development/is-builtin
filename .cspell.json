@@ -14,22 +14,33 @@
   "flagWords": [],
   "ignorePaths": [
     "**/*.snap",
+    "**/.gitconfig",
     "**/.gitignore",
-    "**/.gitkeep",
+    "**/CHANGELOG.md",
+    "**/LICENSE.md",
+    "**/RELEASE_NOTES.md",
+    "**/dist/",
     ".cspell.json",
     ".env*",
+    ".eslintignore",
     ".git/",
     ".husky/_/",
-    ".nvmrc",
+    ".prettierignore",
+    ".vercel/",
+    ".vscode/settings.json",
     ".yarn/",
-    "CHANGELOG.md",
-    "LICENSE.md",
     "__tests__/report.json",
-    "dist/",
     "patches/",
+    "tsconfig*temp.json",
+    "vitest.config.*.timestamp-*.mjs",
     "yarn.lock"
   ],
-  "ignoreRegExpList": ["/from\\s+(['\"]).*\\1/"],
+  "ignoreRegExpList": [
+    "/0x*/",
+    "/@flex-development\\/.*/",
+    "/from\\s+(['\"]).*\\1/",
+    "import\\(.*\\)"
+  ],
   "ignoreWords": [],
   "language": "en-US",
   "patterns": [],
@@ -37,5 +48,5 @@
   "useGitignore": true,
   "usePnP": false,
   "version": "0.2",
-  "words": ["fldv"]
+  "words": ["fldv", "flexdevelopmentllc", "mkbuild", "mlly"]
 }

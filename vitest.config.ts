@@ -1,72 +1,66 @@
 /**
  * @file Vitest Configuration
  * @module config/vitest
- * @see https://vitest.dev/config
+ * @see https://vitest.dev/config/
  */
 
 import { NodeEnv } from '@flex-development/tutils'
 import ci from 'is-ci'
 import path from 'node:path'
-import type { UserConfig } from 'vite'
 import tsconfigpaths from 'vite-tsconfig-paths'
 import GithubActionsReporter from 'vitest-github-actions-reporter'
+import {
+  defineConfig,
+  type UserConfig,
+  type UserConfigExport
+} from 'vitest/config'
 import { BaseSequencer } from 'vitest/node'
 
 /**
- * Creates a {@link UserConfig} object for test environments.
+ * Vitest configuration export.
  *
- * @return {UserConfig} Vitest configuration options
+ * @const {UserConfigExport} config
  */
-const config = (): UserConfig => {
+const config: UserConfigExport = defineConfig((): UserConfig => {
   /**
-   * Absolute path to [experimental loader for Node.js][1].
+   * [`lint-staged`][1] check.
    *
-   * [1]: https://nodejs.org/docs/latest-v16.x/api/esm.html#loaders
+   * [1]: https://github.com/okonet/lint-staged
    *
-   * @const {string} NODE_LOADER_PATH
+   * @const {boolean} LINT_STAGED
    */
-  const NODE_LOADER_PATH: string = path.resolve('loader.mjs')
-
-  /**
-   * Absolute path to tsconfig file.
-   *
-   * @const {string} TSCONFIG_PATH
-   */
-  const TSCONFIG_PATH: string = path.resolve('tsconfig.json')
+  const LINT_STAGED: boolean = !!Number.parseInt(process.env.LINT_STAGED ?? '0')
 
   return {
     define: {
-      'import.meta.env.CI': JSON.stringify(ci),
-      'import.meta.env.NODE_ENV': JSON.stringify(NodeEnv.TEST),
-      'process.env.NODE_OPTIONS': JSON.stringify(`--loader=${NODE_LOADER_PATH}`)
+      'import.meta.env.NODE_ENV': JSON.stringify(NodeEnv.TEST)
     },
     mode: NodeEnv.TEST,
-    plugins: [tsconfigpaths({ projects: [TSCONFIG_PATH] })],
+    plugins: [tsconfigpaths({ projects: [path.resolve('tsconfig.json')] })],
     test: {
       allowOnly: !ci,
       clearMocks: true,
       coverage: {
-        all: true,
+        all: !LINT_STAGED,
         clean: true,
-        exclude: ['**/__mocks__/**', '**/__tests__/**'],
+        cleanOnRerun: true,
+        exclude: ['**/__mocks__/**', '**/__tests__/**', '**/index.ts'],
         extension: ['.ts'],
         include: ['src'],
-        reporter: ['json-summary', 'lcov', 'text'],
+        reporter: [ci ? 'lcovonly' : 'lcov', 'text'],
         reportsDirectory: './coverage',
         skipFull: false
       },
-      globalSetup: [
-        './__tests__/setup/setup.ts',
-        './__tests__/setup/teardown.ts'
-      ],
+      globalSetup: [],
       globals: true,
       hookTimeout: 10 * 1000,
-      include: ['**/__tests__/*.spec.ts'],
+      include: [
+        '**/__tests__/*.spec.ts',
+        LINT_STAGED ? '**/__tests__/*.spec-d.ts' : ''
+      ].filter(pattern => pattern.length > 0),
       isolate: true,
       mockReset: true,
-      outputFile: {
-        json: './__tests__/report.json'
-      },
+      outputFile: { json: './__tests__/report.json' },
       passWithNoTests: true,
       reporters: [
         'json',
@@ -112,9 +106,16 @@ const config = (): UserConfig => {
         min: false,
         printFunctionName: true
       },
-      testTimeout: 10 * 1000
+      testTimeout: 10 * 1000,
+      typecheck: {
+        allowJs: false,
+        checker: 'tsc',
+        ignoreSourceErrors: false,
+        include: ['**/__tests__/*.spec-d.ts'],
+        tsconfig: path.resolve('tsconfig.typecheck.json')
+      }
     }
   }
-}
+})
 
 export default config

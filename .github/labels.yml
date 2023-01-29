@@ -26,10 +26,6 @@
 # scope labels
 # project-specific groups for issues, pull requests, and discussions
 
-- name: scope:cjs
-  description: commonjs
-  color: 74cefc
-
 - name: scope:dependencies
   description: dependency updates
   color: 74cefc
@@ -43,7 +39,7 @@
   color: 74cefc
 
 - name: scope:ponyfill
-  description: ponyfill
+  description: universal drop-in replacement
   color: 74cefc
 
 - name: scope:release

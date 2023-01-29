@@ -10,16 +10,7 @@
  */
 const config = {
   root: true,
-  extends: ['./.eslintrc.base.cjs'],
-  overrides: [
-    ...require('./.eslintrc.base.cjs').overrides,
-    {
-      files: ['src/lib/resolve-alias.ts'],
-      rules: {
-        '@typescript-eslint/unbound-method': 0
-      }
-    }
-  ]
+  extends: ['./.eslintrc.base.cjs']
 }
 
 module.exports = config
