@@ -18,6 +18,7 @@ Universal drop-in replacement for [`module.isBuiltin`][1]
 - [Install](#install)
 - [Use](#use)
 - [API](#api)
+  - [isBuiltin(id)](#isbuiltinid-url--string--boolean)
 - [Types](#types)
 - [Related](#related)
 - [Contribute](#contribute)
@@ -67,15 +68,34 @@ console.debug(isBuiltin(pathToFileURL('node_modules/@flex-development/mlly')))  
 
 ## API
 
-**TODO**: api documentation.
+This package exports the following identifiers:
+
+- [`isBuiltin`](#isbuiltinid-url--string--boolean)
+
+There is no default export.
+
+### `isBuiltin(id: URL | string) => boolean`
+
+Checks if the given module `id` is a [builtin module][2].
+
+Supports [bare specifiers][5] and [`node:` URLs][3]. If the given module `id` is an instance of [`URL`][6],
+[`id.href`][7] will be checked instead.
+
+#### Parameters
+
+- `id` (`URL | string`) &mdash; Module id to evaluate
+
+#### Returns
+
+Returns `true` if `id` is a builtin module, `false` otherwise.
 
 ## Types
 
-This package is fully typed with [TypeScript][5].
+This package is fully typed with [TypeScript][8].
 
 ## Related
 
-- [`builtin-modules`][6] &mdash; Universal drop-in replacement for [`module.builtinModules`][7]
+- [`builtin-modules`][9] &mdash; Universal drop-in replacement for [`module.builtinModules`][10]
 
 ## Contribute
 
@@ -85,6 +105,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 [2]: https://nodejs.org/api/esm.html#builtin-modules
 [3]: https://nodejs.org/api/esm.html#node-imports
 [4]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
-[5]: https://www.typescriptlang.org
-[6]: https://github.com/flex-development/builtin-modules
-[7]: https://nodejs.org/api/module.html#modulebuiltinmodules
+[5]: https://nodejs.org/api/esm.html#terminology
+[6]: https://nodejs.org/api/url.html#class-url
+[7]: https://nodejs.org/api/url.html#urlhref
+[8]: https://www.typescriptlang.org
+[9]: https://github.com/flex-development/builtin-modules
+[10]: https://nodejs.org/api/module.html#modulebuiltinmodules

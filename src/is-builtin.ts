@@ -9,11 +9,14 @@ import type { URL } from 'node:url'
 /**
  * Checks if the given module `id` is a [builtin module][1].
  *
- * Supports [bare specifiers][2] and [`node:` URLs][3].
+ * Supports [bare specifiers][2] and [`node:` URLs][3]. If the given module `id`
+ * is an instance of [`URL`][4], [`id.href`][5] will be checked instead.
  *
  * [1]: https://nodejs.org/api/esm.html#builtin-modules
  * [2]: https://nodejs.org/api/esm.html#terminology
  * [3]: https://nodejs.org/api/esm.html#node-imports
+ * [4]: https://nodejs.org/api/url.html#class-url
+ * [5]: https://nodejs.org/api/url.html#urlhref
  *
  * @example
  *  isBuiltin('@flex-development/is-builtin') // false
