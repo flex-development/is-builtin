@@ -333,6 +333,11 @@
       "icon": "temp"
     },
     {
+      "extensions": ["internal"],
+      "format": "svg",
+      "icon": "include"
+    },
+    {
       "extensions": ["patches"],
       "format": "svg",
       "icon": "include"
