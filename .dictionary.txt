@@ -18,12 +18,16 @@ larsgw
 lcov
 lintstagedrc
 micnncim
+mkbuild
+mlly
 nocheck
 npmrc
 nvmrc
+pathe
 pkgs
 pnpm
 preid
 syncer
+unstub
 vates
 yarnrc
