@@ -1,5 +1,6 @@
 # is-builtin
 
+[![github release](https://img.shields.io/github/v/release/flex-development/is-builtin.svg?include_prereleases&sort=semver)](https://github.com/flex-development/is-builtin/releases/latest)
 [![npm](https://img.shields.io/npm/v/@flex-development/is-builtin.svg)](https://npmjs.com/package/@flex-development/is-builtin)
 [![codecov](https://codecov.io/github/flex-development/is-builtin/branch/main/graph/badge.svg?token=MQ427OD7XD)](https://codecov.io/github/flex-development/is-builtin)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
