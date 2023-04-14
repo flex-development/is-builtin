@@ -73,7 +73,7 @@
     "typecheck:watch": "vitest typecheck"
   },
   "dependencies": {
-    "@flex-development/builtin-modules": "1.0.0"
+    "@flex-development/builtin-modules": "2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.5.1",
