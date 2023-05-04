@@ -208,12 +208,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:17.6.1":
-  version: 17.6.1
-  resolution: "@commitlint/config-conventional@npm:17.6.1"
+"@commitlint/config-conventional@npm:17.6.3":
+  version: 17.6.3
+  resolution: "@commitlint/config-conventional@npm:17.6.3"
   dependencies:
     conventional-changelog-conventionalcommits: "npm:^5.0.0"
-  checksum: add7360c14f0db394457e9bab546a6b31ee98d9edc97d24d21408848bc83911601e07fa2bd5bde82d6139443d5431ed6bf8f7c111a447cbea26bcc518d666456
+  checksum: 8ebd54fde6116589aa404b4a594e718f1fc1d0de843475c95298789a561836501d329539dfaa98f9711137fbe353cd6f60c3af2f156d7e592b2b22fc1bc7d7a8
   languageName: node
   linkType: hard
 
@@ -1138,7 +1138,7 @@ __metadata:
   resolution: "@flex-development/is-builtin@workspace:."
   dependencies:
     "@commitlint/cli": "npm:17.6.3"
-    "@commitlint/config-conventional": "npm:17.6.1"
+    "@commitlint/config-conventional": "npm:17.6.3"
     "@flex-development/builtin-modules": "npm:2.1.0"
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/decorator-regex": "npm:1.0.0"
