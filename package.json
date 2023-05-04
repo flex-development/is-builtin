@@ -76,7 +76,7 @@
     "@flex-development/builtin-modules": "2.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.1",
+    "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.1",
     "@flex-development/commitlint-config": "1.0.1",
     "@flex-development/decorator-regex": "1.0.0",
