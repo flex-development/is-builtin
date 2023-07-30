@@ -4,6 +4,7 @@
  */
 
 import { builtinModules } from '@flex-development/builtin-modules'
+import { delimiter } from '@flex-development/pathe'
 
 /**
  * Set containing the names of modules provided by Node.js. In addition to
@@ -18,7 +19,7 @@ import { builtinModules } from '@flex-development/builtin-modules'
  * @const {Set<string>} BUILTIN_MODULES
  */
 const BUILTIN_MODULES: Set<string> = new Set<string>(
-  builtinModules.flatMap(name => [name, 'node:' + name])
+  builtinModules.flatMap(m => [m, 'node' + delimiter + m])
 )
 
 export default BUILTIN_MODULES
