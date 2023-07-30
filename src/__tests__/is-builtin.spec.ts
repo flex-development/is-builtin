@@ -3,7 +3,7 @@
  * @module is-builtin/tests/unit/isBuiltin
  */
 
-import module from 'node:module'
+import BUILTIN_MODULES from '#src/internal/builtin-modules'
 import { URL, pathToFileURL } from 'node:url'
 import testSubject from '../is-builtin'
 
@@ -20,12 +20,6 @@ describe('unit:isBuiltin', () => {
   })
 
   it('should return true if id is builtin module', () => {
-    // Arrange
-    const cases: (URL | string)[] = module.builtinModules.flatMap(name => {
-      return [name, 'node:' + name, new URL('node:' + name)]
-    })
-
-    // Act + Expect
-    cases.forEach(id => expect(testSubject(id)).to.be.true)
+    BUILTIN_MODULES.forEach(id => expect(testSubject(id)).to.be.true)
   })
 })

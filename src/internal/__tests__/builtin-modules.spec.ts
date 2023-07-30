@@ -3,19 +3,28 @@
  * @module builtin-modules/internal/tests/unit/BUILTIN_MODULES
  */
 
+import pathe from '@flex-development/pathe'
 import module from 'node:module'
 import TEST_SUBJECT from '../builtin-modules'
 
 describe('unit:internal/BUILTIN_MODULES', () => {
-  it('should be superset of builtinModules', () => {
-    expect([...TEST_SUBJECT]).to.include.members(module.builtinModules)
+  let subject: string[]
+
+  beforeAll(() => {
+    subject = [...TEST_SUBJECT]
   })
 
-  it('should be superset of builtinModules.map(name => "node:" + name)', () => {
+  it('should be superset of builtinModules', () => {
+    expect(subject).to.include.members(module.builtinModules)
+  })
+
+  it('should be superset of builtinModules.map(m => "node:" + m)', () => {
     // Arrange
-    const urls: string[] = module.builtinModules.map(name => 'node:' + name)
+    const subset: string[] = module.builtinModules.map(m => {
+      return 'node' + pathe.delimiter + m
+    })
 
     // Expect
-    expect([...TEST_SUBJECT]).to.include.members(urls)
+    expect(subject).to.include.members(subset)
   })
 })

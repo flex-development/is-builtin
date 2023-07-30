@@ -9,13 +9,13 @@ import type testSubject from '../is-builtin'
 describe('unit-d:isBuiltin', () => {
   it('should be callable with [URL | string]', () => {
     // Arrange
-    type Parameters = [URL | string]
+    type P = [URL | string]
 
     // Expect
-    expectTypeOf<typeof testSubject>().parameters.toEqualTypeOf<Parameters>()
+    expectTypeOf<typeof testSubject>().parameters.toEqualTypeOf<P>()
   })
 
-  it('should return type of boolean', () => {
-    expectTypeOf<typeof testSubject>().returns.toBeBoolean()
+  it('should return boolean', () => {
+    expectTypeOf<typeof testSubject>().returns.toEqualTypeOf<boolean>()
   })
 })
