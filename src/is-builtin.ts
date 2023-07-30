@@ -4,7 +4,7 @@
  */
 
 import BUILTIN_MODULES from '#src/internal/builtin-modules'
-import type { URL } from 'node:url'
+import { isEmptyValue, isString, type Nilable } from '@flex-development/tutils'
 
 /**
  * Checks if the given module `id` is a [builtin module][1].
@@ -30,11 +30,11 @@ import type { URL } from 'node:url'
  *  isBuiltin(new URL('node:os')) // true
  *  isBuiltin(pathToFileURL('.')) // false
  *
- * @param {URL | string} id - Module id to evaluate
- * @return {boolean} `true` if `id` is builtin module, `false` otherwise
+ * @param {Nilable<string | { href: string }>} id - Module id to evaluate
+ * @return {boolean} `true` if `id` is builtin module
  */
-const isBuiltin = (id: URL | string): boolean => {
-  return BUILTIN_MODULES.has(typeof id === 'object' ? id.href : id)
+const isBuiltin = (id: Nilable<string | { href: string }>): boolean => {
+  return !isEmptyValue(id) && BUILTIN_MODULES.has(isString(id) ? id : id.href)
 }
 
 export default isBuiltin

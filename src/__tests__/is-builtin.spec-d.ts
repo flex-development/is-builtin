@@ -3,16 +3,16 @@
  * @module is-builtin/tests/unit-d/isBuiltin
  */
 
-import type { URL } from 'node:url'
+import type { Nilable } from '@flex-development/tutils'
 import type testSubject from '../is-builtin'
 
 describe('unit-d:isBuiltin', () => {
-  it('should be callable with [URL | string]', () => {
+  it('should be callable with [Nilable<string | { href: string }>]', () => {
     // Arrange
-    type P = [URL | string]
+    type Expect = [Nilable<string | { href: string }>]
 
     // Expect
-    expectTypeOf<typeof testSubject>().parameters.toEqualTypeOf<P>()
+    expectTypeOf<typeof testSubject>().parameters.toEqualTypeOf<Expect>()
   })
 
   it('should return boolean', () => {

@@ -4,19 +4,22 @@
  */
 
 import BUILTIN_MODULES from '#src/internal/builtin-modules'
-import { URL, pathToFileURL } from 'node:url'
+import * as mlly from '@flex-development/mlly'
+import pkg from '../../package.json' assert { type: 'json' }
 import testSubject from '../is-builtin'
 
 describe('unit:isBuiltin', () => {
   it('should return false if id is not builtin module', () => {
     // Arrange
-    const cases: (URL | string)[] = [
-      '@flex-development/is-builtin',
-      pathToFileURL('node_modules/@flex-development/builtin-modules/')
+    const cases: Parameters<typeof testSubject>[] = [
+      [''],
+      [null],
+      [pkg.name],
+      [mlly.toURL('node_modules/@flex-development/builtin-modules')]
     ]
 
     // Act + Expect
-    cases.forEach(id => expect(testSubject(id)).to.be.false)
+    cases.forEach(([id]) => expect(testSubject(id)).to.be.false)
   })
 
   it('should return true if id is builtin module', () => {
