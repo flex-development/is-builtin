@@ -1073,10 +1073,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/builtin-modules@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@flex-development/builtin-modules@npm:2.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fbuiltin-modules%2F2.1.0%2F7bc59fc780205af7e3e44aafc7a0510414e19faf"
-  checksum: 6ba4fd31cb62ce5d72dfe9d8ca54b458077f2e53734cbea5352b3f3591c365550776e7fa6feeb165e154c8a107c0a1c4feb6f14e1eed9171e447a1a96a95fd9c
+"@flex-development/builtin-modules@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@flex-development/builtin-modules@npm:2.1.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fbuiltin-modules%2F2.1.1%2F03fc38789c4465ed1f2d7973ef4c16a56016e7bd"
+  checksum: 1690c17322a463e8d506aef613a0fd121321a1358867bd2e43bd2d054f06d0c7c191624dde3c56fbf2acea5272517a542816a538a390074ec1b4e53d9e3786e4
   languageName: node
   linkType: hard
 
@@ -1203,7 +1203,7 @@ __metadata:
   dependencies:
     "@arethetypeswrong/cli": "npm:0.7.0"
     "@commitlint/cli": "npm:17.6.7"
-    "@flex-development/builtin-modules": "npm:2.1.0"
+    "@flex-development/builtin-modules": "npm:2.1.1"
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/decorator-regex": "npm:1.0.0"
     "@flex-development/esm-types": "npm:1.0.0"
