@@ -1,3 +1,85 @@
+## [3.1.0](https://github.com/flex-development/is-builtin/compare/3.0.0...3.1.0) (2023-07-30)
+
+
+### :package: Build
+
+* **deps-dev:** Bump @commitlint/cli from 17.5.1 to 17.6.1 ([#133](https://github.com/flex-development/is-builtin/issues/133)) ([310e388](https://github.com/flex-development/is-builtin/commit/310e3883a616d4607c43035a639f6f3476ef18f7))
+* **deps-dev:** Bump @commitlint/cli from 17.6.1 to 17.6.3 ([#156](https://github.com/flex-development/is-builtin/issues/156)) ([bdc1f2f](https://github.com/flex-development/is-builtin/commit/bdc1f2fb00021aa55fa50450b0833f86c071e1aa))
+* **deps-dev:** Bump @commitlint/config-conventional from 17.6.1 to 17.6.3 ([#154](https://github.com/flex-development/is-builtin/issues/154)) ([87efd95](https://github.com/flex-development/is-builtin/commit/87efd95ac9b2a7313e64bdc8f7aea874b9e73138))
+* **deps-dev:** Bump @flex-development/esm-types from 1.0.0 to 2.0.0 ([#220](https://github.com/flex-development/is-builtin/issues/220)) ([942a5c4](https://github.com/flex-development/is-builtin/commit/942a5c43bce01c7cc53123b92b5926f0aaefdf91))
+* **deps-dev:** bump @flex-development/tutils from 6.0.0-alpha.10 to 6.0.0-alpha.12 ([0663437](https://github.com/flex-development/is-builtin/commit/06634379332298bfd9f8e9a84ec7b291a2aab6de))
+* **deps-dev:** Bump @typescript-eslint/eslint-plugin from 5.59.0 to 5.59.1 ([#142](https://github.com/flex-development/is-builtin/issues/142)) ([fe9190c](https://github.com/flex-development/is-builtin/commit/fe9190c19b5b05ef769daac5c57be2782d4e3d79))
+* **deps-dev:** Bump @typescript-eslint/eslint-plugin from 5.59.1 to 5.59.2 ([#150](https://github.com/flex-development/is-builtin/issues/150)) ([caca9da](https://github.com/flex-development/is-builtin/commit/caca9daed32e9ff6ee83ca2dd0506122df485839))
+* **deps-dev:** Bump @typescript-eslint/eslint-plugin from 5.59.2 to 5.59.5 ([#164](https://github.com/flex-development/is-builtin/issues/164)) ([044c561](https://github.com/flex-development/is-builtin/commit/044c56193ca9106b1215c54ba7c76b2dfd7262d4))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.59.0 to 5.59.1 ([#145](https://github.com/flex-development/is-builtin/issues/145)) ([a1a19fd](https://github.com/flex-development/is-builtin/commit/a1a19fd584aaac9b3c57f481b9ff0de8fb675f33))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.59.1 to 5.59.2 ([#151](https://github.com/flex-development/is-builtin/issues/151)) ([8b01fdd](https://github.com/flex-development/is-builtin/commit/8b01fdd13d3a7e7eb93ad7d6f99f6107e7d2b713))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.59.2 to 5.59.5 ([#163](https://github.com/flex-development/is-builtin/issues/163)) ([f80a179](https://github.com/flex-development/is-builtin/commit/f80a179623b808cfb5cebc356ce5714d57e4de12))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.59.5 to 5.59.8 ([#185](https://github.com/flex-development/is-builtin/issues/185)) ([49602db](https://github.com/flex-development/is-builtin/commit/49602db78a0018b1a73f1cb35ebe1e6d5c3b0b77))
+* **deps-dev:** Bump @vitest/coverage-c8 from 0.30.0 to 0.30.1 ([#134](https://github.com/flex-development/is-builtin/issues/134)) ([d7210c5](https://github.com/flex-development/is-builtin/commit/d7210c541e0e5ce15e4b39322ea00920943a5c33))
+* **deps-dev:** Bump @vitest/coverage-c8 from 0.30.1 to 0.31.0 ([#155](https://github.com/flex-development/is-builtin/issues/155)) ([2b18bb6](https://github.com/flex-development/is-builtin/commit/2b18bb69979935e131d9beb004a8ebbf8342f4bf))
+* **deps-dev:** Bump @vitest/ui from 0.30.1 to 0.31.0 ([#157](https://github.com/flex-development/is-builtin/issues/157)) ([e651007](https://github.com/flex-development/is-builtin/commit/e651007bfbbb9bfa588d80562cadbb162ba683df))
+* **deps-dev:** Bump esbuild from 0.17.17 to 0.17.18 ([#141](https://github.com/flex-development/is-builtin/issues/141)) ([13be5d1](https://github.com/flex-development/is-builtin/commit/13be5d1e74cdbc744863bd26f1a307cbc4904709))
+* **deps-dev:** Bump eslint from 8.38.0 to 8.39.0 ([#143](https://github.com/flex-development/is-builtin/issues/143)) ([c839db4](https://github.com/flex-development/is-builtin/commit/c839db48b4316e8e9432359f5397b6963a466eee))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 43.0.4 to 43.0.7 ([#138](https://github.com/flex-development/is-builtin/issues/138)) ([b5d4882](https://github.com/flex-development/is-builtin/commit/b5d4882df561ba686225515a578042fc624f91a5))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 43.0.7 to 43.1.1 ([#147](https://github.com/flex-development/is-builtin/issues/147)) ([ce5fcba](https://github.com/flex-development/is-builtin/commit/ce5fcba9ea5bc8458edc4516570251aa7438c2d5))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 43.1.1 to 43.2.0 ([#159](https://github.com/flex-development/is-builtin/issues/159)) ([ed35840](https://github.com/flex-development/is-builtin/commit/ed358405a12933abf29791e1d2cde6330ab8ad5f))
+* **deps-dev:** Bump eslint-plugin-jsonc from 2.7.0 to 2.8.0 ([#169](https://github.com/flex-development/is-builtin/issues/169)) ([1c0a8bb](https://github.com/flex-development/is-builtin/commit/1c0a8bb62d016e1b361b1de7438f93b4dae05355))
+* **deps-dev:** Bump eslint-plugin-yml from 1.5.0 to 1.6.0 ([#165](https://github.com/flex-development/is-builtin/issues/165)) ([025e152](https://github.com/flex-development/is-builtin/commit/025e1521872592d3d69d57225c57e20c21efbcbe))
+* **deps-dev:** Bump eslint-plugin-yml from 1.6.0 to 1.7.0 ([#167](https://github.com/flex-development/is-builtin/issues/167)) ([20b6153](https://github.com/flex-development/is-builtin/commit/20b615345505fd2be9a6c9bf32d1ee1550dafdf7))
+* **deps-dev:** Bump jsonc-eslint-parser from 2.2.0 to 2.3.0 ([#166](https://github.com/flex-development/is-builtin/issues/166)) ([9686c74](https://github.com/flex-development/is-builtin/commit/9686c74bdcfa79ae2c0c831eec343f1fb7548b15))
+* **deps-dev:** Bump lint-staged from 13.2.1 to 13.2.2 ([#148](https://github.com/flex-development/is-builtin/issues/148)) ([95231ad](https://github.com/flex-development/is-builtin/commit/95231adc17da4e967d6d8b8575aca283b3800860))
+* **deps-dev:** Bump prettier from 2.8.7 to 2.8.8 ([#140](https://github.com/flex-development/is-builtin/issues/140)) ([889d351](https://github.com/flex-development/is-builtin/commit/889d35187f3ce361aedff23d4dd72f770af33f9c))
+* **deps-dev:** Bump semver from 7.3.8 to 7.5.0 ([#132](https://github.com/flex-development/is-builtin/issues/132)) ([e88ad65](https://github.com/flex-development/is-builtin/commit/e88ad6517e4b13eb13d996ff20b535610d3c1238))
+* **deps-dev:** Bump semver from 7.5.0 to 7.5.1 ([#172](https://github.com/flex-development/is-builtin/issues/172)) ([4b3692f](https://github.com/flex-development/is-builtin/commit/4b3692facec47cb220cc4a58379678558895f8d5))
+* **deps-dev:** Bump semver from 7.5.1 to 7.5.2 ([#203](https://github.com/flex-development/is-builtin/issues/203)) ([af59c74](https://github.com/flex-development/is-builtin/commit/af59c749be2b6288356439e325b865797f68a757))
+* **deps-dev:** Bump the conventional-changelog group with 5 updates ([#219](https://github.com/flex-development/is-builtin/issues/219)) ([a348dc4](https://github.com/flex-development/is-builtin/commit/a348dc4bc07259057d1e64dd31aefe8219354a4c))
+* **deps-dev:** Bump vite from 4.2.1 to 4.3.1 ([#139](https://github.com/flex-development/is-builtin/issues/139)) ([aab7cd9](https://github.com/flex-development/is-builtin/commit/aab7cd95d2f3bb2896d79b890e055a40bcec8e5e))
+* **deps-dev:** Bump vite from 4.3.1 to 4.3.2 ([#146](https://github.com/flex-development/is-builtin/issues/146)) ([47128eb](https://github.com/flex-development/is-builtin/commit/47128ebcedace2b36f51933f265b3d211d940d35))
+* **deps-dev:** Bump vite from 4.3.2 to 4.3.3 ([#149](https://github.com/flex-development/is-builtin/issues/149)) ([f592684](https://github.com/flex-development/is-builtin/commit/f5926843952cd35b0e8aeeb2126f2308ba3c1d6a))
+* **deps-dev:** Bump vite from 4.3.3 to 4.3.4 ([#152](https://github.com/flex-development/is-builtin/issues/152)) ([995a240](https://github.com/flex-development/is-builtin/commit/995a2407473dd3cf73b4d0a495332ae806092cef))
+* **deps-dev:** Bump vite from 4.3.4 to 4.3.5 ([#158](https://github.com/flex-development/is-builtin/issues/158)) ([f957025](https://github.com/flex-development/is-builtin/commit/f9570256c7aec5cab6ffc6466d72ef9848bd2dfb))
+* **deps-dev:** Bump vite from 4.3.5 to 4.3.6 ([#175](https://github.com/flex-development/is-builtin/issues/175)) ([ad0feaf](https://github.com/flex-development/is-builtin/commit/ad0feaf6e536f9a15e04548fe0a673916fb73f6e))
+* **deps-dev:** Bump vite from 4.3.6 to 4.3.9 ([#195](https://github.com/flex-development/is-builtin/issues/195)) ([f2cfc7e](https://github.com/flex-development/is-builtin/commit/f2cfc7e0ec8a5221fc6f925032a2910bbbc0ef3f))
+* **deps-dev:** Bump vitest from 0.30.1 to 0.31.0 ([#153](https://github.com/flex-development/is-builtin/issues/153)) ([b2be948](https://github.com/flex-development/is-builtin/commit/b2be9481d0961eb0dfcd31cc0205b0669ff8ab6a))
+* **deps-dev:** Bump yaml-eslint-parser from 1.2.0 to 1.2.1 ([#160](https://github.com/flex-development/is-builtin/issues/160)) ([b918b5f](https://github.com/flex-development/is-builtin/commit/b918b5f6dbe7e9443fcad5fa5f510449962df170))
+* **deps-dev:** Bump yaml-eslint-parser from 1.2.1 to 1.2.2 ([#171](https://github.com/flex-development/is-builtin/issues/171)) ([1f40ed0](https://github.com/flex-development/is-builtin/commit/1f40ed07ab1ddffff374630ed0e1b830373a5b44))
+* **deps:** Bump @flex-development/builtin-modules from 2.1.0 to 2.1.1 ([#221](https://github.com/flex-development/is-builtin/issues/221)) ([aa54244](https://github.com/flex-development/is-builtin/commit/aa5424491e54d4990e7083df00f181c2ce5131d0))
+* **deps:** Bump @flex-development/pathe from 1.0.3 to 2.0.0 ([#222](https://github.com/flex-development/is-builtin/issues/222)) ([1a34a66](https://github.com/flex-development/is-builtin/commit/1a34a66695c40e5163e66f68771c33b4d36479ab))
+
+
+### :robot: Continuous Integration
+
+* [[@dependabot](https://github.com/dependabot)] configure grouped version updates ([707d9bd](https://github.com/flex-development/is-builtin/commit/707d9bd3b334603a2e837f9f3c158d93adddb52c))
+* **deps:** Bump actions/checkout from 3.5.0 to 3.5.2 ([#122](https://github.com/flex-development/is-builtin/issues/122)) ([ad7e5de](https://github.com/flex-development/is-builtin/commit/ad7e5de1101907ee09b1ad860ee80c95ace4e2a5))
+* **deps:** Bump actions/checkout from 3.5.2 to 3.5.3 ([#199](https://github.com/flex-development/is-builtin/issues/199)) ([4aaf912](https://github.com/flex-development/is-builtin/commit/4aaf912d0ffd8540fe6b73d8bc7f3a20c0b08d93))
+* **deps:** Bump actions/setup-node from 3.6.0 to 3.7.0 ([#211](https://github.com/flex-development/is-builtin/issues/211)) ([3c8df86](https://github.com/flex-development/is-builtin/commit/3c8df86c048db3dde4bf27dc8b9cd572cc388aa2))
+* **deps:** Bump codecov/codecov-action from 3.1.1 to 3.1.2 ([#115](https://github.com/flex-development/is-builtin/issues/115)) ([dbf5e66](https://github.com/flex-development/is-builtin/commit/dbf5e66e7d7707a1f26e8aea4247494e9fd6524b))
+* **deps:** Bump codecov/codecov-action from 3.1.2 to 3.1.3 ([#136](https://github.com/flex-development/is-builtin/issues/136)) ([c5ceb54](https://github.com/flex-development/is-builtin/commit/c5ceb54aa25cd3dd0ec8c387a3c4f37d42a4775a))
+* **deps:** Bump codecov/codecov-action from 3.1.3 to 3.1.4 ([#176](https://github.com/flex-development/is-builtin/issues/176)) ([d8c792d](https://github.com/flex-development/is-builtin/commit/d8c792d930d0d3e537b82ac367886f8972ad7724))
+* **deps:** Bump crazy-max/ghaction-import-gpg from 5.2.0 to 5.3.0 ([#161](https://github.com/flex-development/is-builtin/issues/161)) ([6a8400a](https://github.com/flex-development/is-builtin/commit/6a8400a043578d0c130dc0b1f5bfc2fb731dcc39))
+* **deps:** Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 ([#130](https://github.com/flex-development/is-builtin/issues/130)) ([3aee1f2](https://github.com/flex-development/is-builtin/commit/3aee1f207572cb19d912494d280875d386770560))
+* **deps:** Bump dependabot/fetch-metadata from 1.4.0 to 1.5.0 ([#178](https://github.com/flex-development/is-builtin/issues/178)) ([b9b1631](https://github.com/flex-development/is-builtin/commit/b9b1631ff36d1c02a36b5121d3cb512c996c96cf))
+* **deps:** Bump dependabot/fetch-metadata from 1.5.0 to 1.5.1 ([#182](https://github.com/flex-development/is-builtin/issues/182)) ([0d2b046](https://github.com/flex-development/is-builtin/commit/0d2b04686763625f2aa399d72b95d695b5fad9d4))
+* **deps:** Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 ([#205](https://github.com/flex-development/is-builtin/issues/205)) ([e67cd90](https://github.com/flex-development/is-builtin/commit/e67cd905e803686dfc8f9903a701044c79361cc4))
+* **deps:** Bump dessant/lock-threads from 4.0.0 to 4.0.1 ([#200](https://github.com/flex-development/is-builtin/issues/200)) ([b75ed0a](https://github.com/flex-development/is-builtin/commit/b75ed0ada3fba99a8d722ab061eff7fb363df2cb))
+* **deps:** Bump octokit/graphql-action from 2.2.24 to 2.2.25 ([#215](https://github.com/flex-development/is-builtin/issues/215)) ([c9fe803](https://github.com/flex-development/is-builtin/commit/c9fe803361ee9c87d01ae50aaf942073e94938f2))
+
+
+### :sparkles: Features
+
+* **ponyfill:** [`isBuiltin`] allow nilable module ids ([ee9b2e3](https://github.com/flex-development/is-builtin/commit/ee9b2e3172bd0e940b15f6ccfb77e1ed13b8817c))
+
+
+### :house_with_garden: Housekeeping
+
+* analyze types distribution ([39a7cf8](https://github.com/flex-development/is-builtin/commit/39a7cf87c63f0907f14123898e869a515709a1e4))
+* update dev and test environments ([8cbe7b1](https://github.com/flex-development/is-builtin/commit/8cbe7b1bb939156f869c920b0b7842b7b4a357a6))
+
+
+### :mechanical_arm: Refactors
+
+* **internal:** [`BUILTIN_MODULES`] use `pathe.delimiter` ([a4f0613](https://github.com/flex-development/is-builtin/commit/a4f061313b274b82682a3b9591aab2a55de64c41))
+
 ## [3.0.0](https://github.com/flex-development/is-builtin/compare/2.0.0...3.0.0) (2023-04-18)
 
 
