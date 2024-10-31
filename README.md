@@ -83,7 +83,7 @@ isBuiltin(null)                           // false
 
 This package exports the identifier [`isBuiltin`](#isbuiltinm).
 
-There is no default export.
+The default export is also `isBuiltin`.
 
 ### `isBuiltin(m)`
 

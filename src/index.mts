@@ -3,4 +3,4 @@
  * @module is-builtin
  */
 
-export { default as isBuiltin } from '#is-builtin'
+export { default, default as isBuiltin } from '#is-builtin'

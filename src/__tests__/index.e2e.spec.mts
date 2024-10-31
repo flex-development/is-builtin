@@ -7,6 +7,6 @@ import * as testSubject from '@flex-development/is-builtin'
 
 describe('e2e:is-builtin', () => {
   it('should expose public api', () => {
-    expect(Object.keys(testSubject)).eql(['isBuiltin'])
+    expect(Object.keys(testSubject)).eql(['default', 'isBuiltin'])
   })
 })
