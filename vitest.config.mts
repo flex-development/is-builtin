@@ -21,15 +21,6 @@ import tsconfig from './tsconfig.test.json' with { type: 'json' }
  * @const {UserConfigExport} config
  */
 const config: UserConfigExport = defineConfig((env: ConfigEnv): UserConfig => {
-  /**
-   * [`lint-staged`][lint-staged] check.
-   *
-   * [lint-staged]: https://github.com/okonet/lint-staged
-   *
-   * @const {boolean} LINT_STAGED
-   */
-  const LINT_STAGED: boolean = !!Number.parseInt(process.env.LINT_STAGED ?? '0')
-
   return {
     resolve: { conditions: tsconfig.compilerOptions.customConditions },
     test: {
@@ -41,7 +32,7 @@ const config: UserConfigExport = defineConfig((env: ConfigEnv): UserConfig => {
       },
       clearMocks: true,
       coverage: {
-        all: !LINT_STAGED,
+        all: true,
         clean: true,
         cleanOnRerun: true,
         exclude: ['**/__tests__/'],
@@ -60,9 +51,7 @@ const config: UserConfigExport = defineConfig((env: ConfigEnv): UserConfig => {
       environmentOptions: {},
       globalSetup: [],
       globals: true,
-      include: [
-        `src/**/__tests__/*.${LINT_STAGED ? '{spec,spec-d}' : 'spec'}.mts`
-      ],
+      include: ['src/**/__tests__/*.spec.mts'],
       mockReset: true,
       outputFile: {
         blob: `.vitest-reports/${env.mode}.blob.json`,

@@ -16,7 +16,6 @@ hmarr
 jchen
 kaisugi
 lcov
-lintstagedrc
 mkbuild
 nvmrc
 pathe
