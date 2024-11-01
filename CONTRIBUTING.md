@@ -232,13 +232,13 @@ Be sure to use [`it.skip`][vitest-test-skip] or [`it.todo`][vitest-test-todo] wh
 #### Running Tests
 
 - `yarn test`
-- `yarn test --ui`
-- `yarn test:cov`
-- `yarn test:cov --ui`
-- `yarn test:cov:reports`
 - `yarn test:reports`
+- `yarn test:ui`
+- `yarn test:cov`
+- `yarn test:cov:reports`
+- `yarn test:cov:ui`
 - `yarn typecheck`
-- `yarn typecheck --ui`
+- `yarn typecheck:ui`
 
 #### Code Coverage
 
